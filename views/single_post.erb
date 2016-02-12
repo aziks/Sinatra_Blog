@@ -1,0 +1,8 @@
+<h1> <%= @blog_data[@id.to_i] %> </h1>
+
+
+<% @blog_data.each_with_index do |post, index| %>
+  </br>
+  <a href= "/<%= post.title %>/<%= index %>" ><%= post.title %></a>
+  </br>
+<% end %>
